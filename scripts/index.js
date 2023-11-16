@@ -19,6 +19,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const elems = document.querySelectorAll('.parallax');
     M.Parallax.init(elems);
 });
+
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    switchMode()
+}
+
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
     if (event.matches) {
         switchMode()
