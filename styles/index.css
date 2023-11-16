@@ -1,0 +1,43 @@
+
+.title {
+    font-family: "Press Start 2P", serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/*h1{*/
+/*    font-family: 'Press Start 2P', serif;*/
+/*}*/
+
+html.dark-mode {
+    color: rgb(255, 255, 255);
+}
+
+.dark-mode .section {
+    background-color: rgb(50, 50, 50) !important;
+}
+
+.dark-mode .section.white {
+    background-color: rgb(10, 10, 10) !important;
+}
+
+.dark-mode .grey-text.text-darken-3 {
+    color: #eee !important;
+}
+
+#darkModeSwitch {
+    position: absolute;
+    margin: 0.7rem 0.7rem 0 0;
+    right: 0;
+    z-index: 99999;
+    cursor: pointer;
+    color: #eeeeee !important;
+}
